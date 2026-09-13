@@ -1,12 +1,12 @@
 # 🤖 AI-Driven Standardization and Harmonization of Material Codes Across CPSEs
 
-## 📌 Overview
+##  Overview
 
 Different Central Public Sector Enterprises (CPSEs) may use different material codes and descriptions for the same or similar materials. This can make it difficult to identify equivalent materials, avoid duplicates, and maintain consistent material records across organizations.
 
 This project presents an **AI-assisted material harmonization system** that processes material data from different CPSEs, standardizes their descriptions, identifies equivalent materials, and generates a common **National Material Code (NMC)** while preserving the original CPSE material codes.
 
-## 🎯 Objectives
+##  Objectives
 
 * Standardize material descriptions from different CPSEs.
 * Extract important technical attributes from material descriptions.
@@ -15,7 +15,7 @@ This project presents an **AI-assisted material harmonization system** that proc
 * Generate a common National Material Code (NMC).
 * Preserve existing CPSE/legacy material codes.
 
-## 🔄 System Workflow
+##  System Workflow
 
 ```text
 CPSE Material Data
@@ -59,7 +59,7 @@ The project uses **Sentence Transformers (`all-MiniLM-L6-v2`)** to calculate sem
 
 Technical attributes are compared along with semantic and textual similarity to improve the reliability of matching.
 
-## 🏷️ Common National Material Code (NMC)
+##  Common National Material Code (NMC)
 
 After identifying equivalent materials, the system assigns a common NMC while retaining the original CPSE codes.
 
@@ -126,24 +126,24 @@ Data → Normalization → Attribute Extraction
 
 The system generates matching and harmonized material mapping results.
 
-## 📊 Output
+## Output
 
 The project generates structured output files including:
 
 * `material_matches.csv` – Material similarity and matching results.
 * `final_nmc_mapping.csv` – Final mapping of CPSE material codes to common NMCs.
 
-## 💡 Key Innovation
+##  Key Innovation
 
 The proposed approach combines **AI-based semantic similarity, fuzzy matching, and technical attribute comparison** to identify equivalent materials even when different CPSEs use different descriptions, abbreviations, or formats.
 
-## 🏆 Smart India Hackathon 2026
+## Smart India Hackathon 2026
 
 **Problem Statement ID:** SIH26099
 **Problem Statement:** AI-Driven Standardization and Harmonization of Material Codes Across CPSEs
 
 This project was developed as a prototype for **Smart India Hackathon 2026**, demonstrating how AI and natural language processing can support material standardization and interoperability across CPSEs.
 
-## ⚠️ Prototype Scope
+##  Prototype Scope
 
 This repository demonstrates the core workflow using sample/structured material datasets. Further validation, larger real-world datasets, security, and enterprise integration would be required for production deployment.
